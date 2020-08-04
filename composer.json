@@ -1,12 +1,13 @@
 {
     "name": "codesaur/framework",
     "description": "An elegant object-oriented application development framework for PHP 7.1 or newer",
-    "keywords": ["codesaur","mongol","mongolia","ololt","framework"],
+    "keywords": ["codesaur","mongol","mongolia","mongolian","ololt","framework","narankhuu","coden", "php framework","php"],
     "homepage": "https://ololt.mn/codesaur",
     "authors": [
         {
             "name": "Narankhuu",
-            "email": "codesaur@gmail.com"
+            "email": "codesaur@gmail.com",
+            "homepage": "https://ololt.mn/narankhuu"
         }
     ],
     "require": {
