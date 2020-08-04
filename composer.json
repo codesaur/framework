@@ -17,8 +17,6 @@
         "twig/twig": "^2.0",
         "vlucas/phpdotenv": "^3.1"        
     },
-    "require-dev": {
-    },
     "autoload": {
         "psr-4": {
             "codesaur\\Generic\\": "src/Generic/",
