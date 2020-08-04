@@ -14,6 +14,13 @@
     },
     "require-dev": {
     },
+    "autoload": {
+        "psr-4": {
+            "codesaur\\Generic\\": "src/Generic/",
+            "codesaur\\Globals\\": "src/Globals/",
+            "codesaur\\Http\\": "src/Http/"
+        }
+    },
     "license": "MIT",
     "minimum-stability": "dev"
 }
