@@ -200,6 +200,8 @@ if ( ! function_exists('_codesaur_bootstrap')) {
     if ($timezone) {
         date_default_timezone_set($timezone);
     }
+    
+    define('_ACCOUNT_ID_', 'CODESAUR_ACCOUNT_ID');
 } else {
     return _codesaur_bootstrap();
 }

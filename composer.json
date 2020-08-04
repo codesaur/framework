@@ -21,10 +21,13 @@
         "psr-4": {
             "codesaur\\Generic\\": "src/Generic/",
             "codesaur\\Globals\\": "src/Globals/",
-            "codesaur\\Http\\": "src/Http/"
+            "codesaur\\Http\\": "src/Http/",
+            "codesaur\\HTML\\": "src/HTML/",
+            "codesaur\\DataObject\\": "src/DataObject/",
+            "codesaur\\MultiModel\\": "src/MultiModel/"
         },
         "files": [
-            "src/version.php",
+            "src/environment.php",
             "src/single.php"
         ]
     },
