@@ -3,7 +3,7 @@ codesaur-v7 - Swift seizer
 An elegant object-oriented application development framework for PHP 7.1 or newer
 
 # Credits
-Narankhuu <codesaur@gmail.mn>, +976 99000287, Munkhiin Ololt LLC, https://www.ololt.mn 
+Narankhuu <codesaur@gmail.com>, +976 99000287, Munkhiin Ololt LLC, https://www.ololt.mn 
 
 Copyright (c) 2012 - 2020
 
