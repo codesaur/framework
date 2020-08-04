@@ -24,7 +24,8 @@
             "codesaur\\Http\\": "src/Http/",
             "codesaur\\HTML\\": "src/HTML/",
             "codesaur\\DataObject\\": "src/DataObject/",
-            "codesaur\\MultiModel\\": "src/MultiModel/"
+            "codesaur\\MultiModel\\": "src/MultiModel/",
+            "codesaur\\RBAC\\": "src/RBAC/"
         },
         "files": [
             "src/environment.php",
