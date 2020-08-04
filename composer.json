@@ -22,7 +22,10 @@
             "codesaur\\Generic\\": "src/Generic/",
             "codesaur\\Globals\\": "src/Globals/",
             "codesaur\\Http\\": "src/Http/"
-        }
+        },
+        "files": [
+            "src/single.php"
+        ]
     },
     "license": "MIT",
     "minimum-stability": "dev"
