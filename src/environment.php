@@ -29,8 +29,6 @@ if ( ! function_exists('_codesaur_environment')) {
     ini_set('display_errors', DEBUG ? 'On' : 'Off');
     ini_set('error_log', "$vendor_dir/../tmp/code.log");
 
-    set_error_handler('\codesaur::error');        
-
     $timezone = getenv('TIME_ZONE');
     if ($timezone) {
         date_default_timezone_set($timezone);
@@ -39,4 +37,8 @@ if ( ! function_exists('_codesaur_environment')) {
     define('_ACCOUNT_ID_', 'CODESAUR_ACCOUNT_ID');
 } else {
     _codesaur_environment();
+}
+
+if (DEBUG) {
+    var_dump('codesaur environment included');
 }

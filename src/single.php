@@ -165,43 +165,8 @@ final class codesaur
     }
 }
 
-if ( ! function_exists('_codesaur_bootstrap')) {
-    error_reporting(E_ALL & ~E_STRICT & ~E_NOTICE);
+set_error_handler('\codesaur::error');
 
-    $vendor_dir = dirname(__FILE__) . "/../../..";
-
-    $domain_parts = \explode('.', $_SERVER['SERVER_NAME']);
-    $domain_parts_count = count($domain_parts);
-    if ($domain_parts_count > 2
-            && $domain_parts[$domain_parts_count - 3] != 'www') {
-        $env_file_name = '.env_' . $domain_parts[$domain_parts_count - 3];
-    } else {
-        $env_file_name = null;
-    }
-
-    try {
-        Dotenv\Dotenv::create("$vendor_dir/..", $env_file_name)->load();
-    } catch (Exception $ex) {
-        error_log($ex->getMessage());
-    } finally {
-        define('DEBUG', getenv('APP_ENV') != 'production');
-    }
-
-    define('_codesaur_document', dirname($_SERVER['SCRIPT_FILENAME']));
-    define('_codesaur_application', "$vendor_dir/../application");
-
-    ini_set('log_errors', 'On');
-    ini_set('display_errors', DEBUG ? 'On' : 'Off');
-    ini_set('error_log', "$vendor_dir/../tmp/code.log");
-
-    set_error_handler('\codesaur::error');        
-
-    $timezone = getenv('TIME_ZONE');
-    if ($timezone) {
-        date_default_timezone_set($timezone);
-    }
-    
-    define('_ACCOUNT_ID_', 'CODESAUR_ACCOUNT_ID');
-} else {
-    return _codesaur_bootstrap();
+if (DEBUG) {
+    var_dump('codesaur single included');
 }
