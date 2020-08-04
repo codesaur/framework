@@ -24,6 +24,7 @@
             "codesaur\\Http\\": "src/Http/"
         },
         "files": [
+            "src/version.php",
             "src/single.php"
         ]
     },
