@@ -62,20 +62,7 @@ abstract class IndexTemplate extends TwigTemplate
     {
         return $this->get('content') instanceof Template;
     }
-    
-//    public function addContent($content)
-//    {
-//         $this->setContentIndex($content);
-//    
-//        if ($this->hasContent()) {
-//            $this->get('content')->enhance('content', $this->stringify($content));
-//        } else {
-//            $this->enhance('content', $content);
-//        }
-//        
-//        return $this;
-//    }
-//    
+
     public function addContent($content)
     {
         $this->setContentIndex($content);
