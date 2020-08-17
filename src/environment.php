@@ -1,6 +1,6 @@
 <?php version_compare(PHP_VERSION, '7.1', '>=') || die('codesaur need PHP 7.1 or newer.');
 
-if ( ! function_exists('_codesaur_environment')) {
+if ( ! function_exists('codesaur_environment')) {
     error_reporting(E_ALL & ~E_STRICT & ~E_NOTICE);
 
     $vendor_dir = dirname(__FILE__) . "/../../..";
@@ -22,8 +22,8 @@ if ( ! function_exists('_codesaur_environment')) {
         define('DEBUG', getenv('APP_ENV') != 'production');
     }
 
-    define('_codesaur_document', dirname($_SERVER['SCRIPT_FILENAME']));
-    define('_codesaur_application', "$vendor_dir/../application");
+    define('codesaur_document', dirname($_SERVER['SCRIPT_FILENAME']));
+    define('codesaur_application', "$vendor_dir/../application");
 
     ini_set('log_errors', 'On');
     ini_set('display_errors', DEBUG ? 'On' : 'Off');
@@ -36,7 +36,7 @@ if ( ! function_exists('_codesaur_environment')) {
 
     define('_ACCOUNT_ID_', 'CODESAUR_ACCOUNT_ID');
 } else {
-    _codesaur_environment();
+    codesaur_environment();
 }
 
 if (DEBUG) {

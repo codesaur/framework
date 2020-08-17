@@ -25,8 +25,8 @@ class TwigTemplate extends Template
         $twig->addGlobal('request', \codesaur::request());
         $twig->addGlobal('controller', \codesaur::controller());
 
-        $twig->addGlobal('_document', _document);
-        $twig->addGlobal('_application', _application);
+        $twig->addGlobal('_document', codesaur_document);
+        $twig->addGlobal('_application', codesaur_application);
         
         $twig->addGlobal('language', \codesaur::language());
         $twig->addGlobal('flag', \codesaur::language()->current());
