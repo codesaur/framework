@@ -38,7 +38,3 @@ if ( ! function_exists('codesaur_environment')) {
 } else {
     codesaur_environment();
 }
-
-if (DEBUG) {
-    var_dump('codesaur environment included');
-}

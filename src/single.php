@@ -166,7 +166,3 @@ final class codesaur
 }
 
 set_error_handler('\codesaur::error');
-
-if (DEBUG) {
-    var_dump('codesaur single included');
-}
