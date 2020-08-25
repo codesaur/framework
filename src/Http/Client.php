@@ -26,8 +26,7 @@ class Client extends Base
         }
         $response = \curl_exec($ch);
 
-        if ($response === FALSE)
-        {
+        if ($response === FALSE) {
             $code = \curl_errno($ch);
             $message = \curl_error($ch);
             

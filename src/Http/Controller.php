@@ -11,7 +11,8 @@ class Controller extends Base implements ControllerInterface
 
     public function route() : Route
     {
-        if (isset($this->route)) {
+        if (isset($this->route)
+                && $this->route instanceof Route) {
             return $this->route;
         }
 

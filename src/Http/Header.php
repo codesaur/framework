@@ -5,8 +5,8 @@ use codesaur\Generic\Base;
 class Header extends Base implements HeaderInterface
 {
     const HTTP_OK        = 200;
-    const HTTP_NOT_FOUND = 404;
     const HTTP_FOUND     = 302;
+    const HTTP_NOT_FOUND = 404;
     
     private $_status;
 
