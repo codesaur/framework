@@ -22,9 +22,6 @@ if ( ! function_exists('codesaur_environment')) {
         define('DEBUG', getenv('APP_ENV') != 'production');
     }
 
-    define('codesaur_document', dirname($_SERVER['SCRIPT_FILENAME']));
-    define('codesaur_application', "$vendor_dir/../application");
-
     ini_set('log_errors', 'On');
     ini_set('display_errors', DEBUG ? 'On' : 'Off');
     ini_set('error_log', "$vendor_dir/../tmp/code.log");

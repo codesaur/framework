@@ -22,6 +22,11 @@ class AuthUser extends Base
         $this->data = $data;
         
         $this->auth = Authentication::Login;
+        
+        if (isset($data['account']['id'])
+                && \is_int($data['account']['id'])) {
+            \putenv(_ACCOUNT_ID_ . "={$data['account']['id']}");
+        }
     }
 
     public function logout()

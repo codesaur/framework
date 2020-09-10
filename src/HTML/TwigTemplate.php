@@ -21,18 +21,11 @@ class TwigTemplate extends Template
         $loader = new ArrayLoader(array('result' => $html));
         $twig = new Environment($loader, array('autoescape' => false));
         
+        $twig->addGlobal('app', \codesaur::app());
         $twig->addGlobal('user', \codesaur::user());
         $twig->addGlobal('request', \codesaur::request());
-        $twig->addGlobal('controller', \codesaur::controller());
-
-        $twig->addGlobal('_document', codesaur_document);
-        $twig->addGlobal('_application', codesaur_application);
-        
         $twig->addGlobal('language', \codesaur::language());
-        $twig->addGlobal('flag', \codesaur::language()->current());
-
-        $twig->addGlobal('public', \codesaur::app()->publicUrl());
-        $twig->addGlobal('resource', \codesaur::app()->resourceUrl());
+        $twig->addGlobal('controller', \codesaur::controller());
         
         $twig->addFilter(new TwigFilter('int', function($variable) { return \intval($variable); }));
         $twig->addFilter(new TwigFilter('text', function($string) { return \codesaur::text($string); }));
