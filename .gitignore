@@ -1,6 +1,6 @@
-/tmp/
+/tmp/*/
 /vendor/
-/nbproject/
+/nbproject/private/
 
 .env
 

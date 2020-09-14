@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.php.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/php-project/1">
+            <name>codesaur-framework</name>
+        </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>CHARSET</word>
+            <word>env</word>
+            <word>gmail</word>
+            <word>ICO</word>
+            <word>INDO</word>
+            <word>indoraptor</word>
+            <word>InnoDB</word>
+            <word>JWT</word>
+            <word>LLC</word>
+            <word>localhost</word>
+            <word>mysql</word>
+            <word>Narankhuu</word>
+            <word>nbproject</word>
+            <word>NONINFRINGEMENT</word>
+            <word>Ololt</word>
+            <word>PHP</word>
+            <word>PNG</word>
+            <word>sublicense</word>
+            <word>tmp</word>
+            <word>unicode</word>
+            <word>utf</word>
+            <word>www</word>
+        </spellchecker-wordlist>
+    </configuration>
+</project>
