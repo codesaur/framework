@@ -1,6 +1,6 @@
 /vendor/
 
-/tmp/code.log
+/tmp/*
 
 /nbproject/private/
 
