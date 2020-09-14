@@ -38,9 +38,7 @@
         ]
     },
     "scripts": {
-        "post-install-cmd": [
-            "php -r \"file_exists('.env') || copy('./vendor/codesaur/framework/cnf/.env.example', '.env');\""
-        ]
+        "post-autoload-dump": "php -r \"file_exists('.env') || copy('./vendor/codesaur/framework/cnf/.env.example', '.env'); echo \".env ready!\"\""
     },
     "license": "MIT",
     "minimum-stability": "dev"
