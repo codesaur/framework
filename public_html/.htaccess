@@ -4,8 +4,8 @@ RewriteEngine On
 #RewriteBase /
 
 # rewrite on subfolder
-#RewriteCond %{HTTP_HOST} ^(www.)?ololt\.mn$ [NC]
-#RewriteRule ^(.*)$       https://mrpam.ololt.mn/$1 [L,R=301]
+#RewriteCond %{HTTP_HOST} ^(www.)?example\.com$ [NC]
+#RewriteRule ^(.*)$ subfolder/$1 [R=302,L]
 
 # set timezone
 #SetEnv TZ Asia/Ulaanbaatar
