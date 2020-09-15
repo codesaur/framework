@@ -1,17 +1,18 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
+# set timezone
+#SetEnv TZ Asia/Ulaanbaatar
+
 #RewriteBase /
 
 # rewrite on subfolder
 #RewriteCond %{HTTP_HOST} ^(www.)?example\.com$ [NC]
 #RewriteRule ^(.*)$ subfolder/$1 [R=302,L]
 
-# set timezone
-#SetEnv TZ Asia/Ulaanbaatar
-
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,QSA,NC,L]
+# strip www from url
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,QSA,NC,L]
 
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
