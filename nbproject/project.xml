@@ -7,26 +7,43 @@
         </data>
         <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1"/>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>args</word>
             <word>CHARSET</word>
+            <word>crt</word>
+            <word>css</word>
             <word>env</word>
+            <word>fastcgi</word>
+            <word>fpm</word>
+            <word>gif</word>
             <word>gmail</word>
+            <word>html</word>
             <word>ICO</word>
             <word>INDO</word>
             <word>indoraptor</word>
             <word>InnoDB</word>
+            <word>jpeg</word>
+            <word>jpg</word>
+            <word>js</word>
             <word>JWT</word>
             <word>LLC</word>
             <word>localhost</word>
             <word>mysql</word>
             <word>Narankhuu</word>
             <word>nbproject</word>
+            <word>nginx</word>
             <word>NONINFRINGEMENT</word>
             <word>Ololt</word>
+            <word>param</word>
+            <word>params</word>
             <word>PHP</word>
             <word>PNG</word>
+            <word>ssl</word>
             <word>sublicense</word>
             <word>tmp</word>
+            <word>txt</word>
             <word>unicode</word>
+            <word>unix</word>
+            <word>uri</word>
             <word>utf</word>
             <word>www</word>
         </spellchecker-wordlist>
