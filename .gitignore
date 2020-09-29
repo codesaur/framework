@@ -4,11 +4,13 @@
 !/private/.htaccess
 /databack/*
 !/databack/.htaccess
-/vendor/
-/tmp/*.log
+/tmp/*
+!/tmp/note.txt
 
 /nbproject/private/
 
-.env
+/vendor/
 
 composer.lock
+
+.env
