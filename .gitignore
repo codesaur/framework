@@ -1,5 +1,10 @@
+/public_html/public/*
+!/public_html/public/.htaccess
+/private/*
+!/private/.htaccess
+/databack/*
+!/databack/.htaccess
 /vendor/
-
 /tmp/*.log
 
 /nbproject/private/
