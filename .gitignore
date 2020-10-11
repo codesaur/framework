@@ -4,8 +4,7 @@
 !/private/.htaccess
 /databack/*
 !/databack/.htaccess
-/tmp/*
-!/tmp/note.txt
+/logs/*
 
 /nbproject/private/
 
