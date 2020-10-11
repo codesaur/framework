@@ -5,8 +5,8 @@ class Routing extends \Velociraptor\Routing
     function getHomeRules() : array
     {
         return array(
-            ['', 'HomeController'],
-            ['/home', 'HomeController', ['name' => 'home']]
+            ['', 'App\\Dashboard\\Home\\HomeController'],
+            ['/home', 'App\\Dashboard\\Home\\HomeController', ['name' => 'home']]
         );
     }
 }

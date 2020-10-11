@@ -5,18 +5,17 @@ class Routing extends \codesaur\Http\Routing
     function getHomeRules() : array
     {
        return array(
-           ['', 'HomeController'],
-           ['/home', 'HomeController', ['name' => 'home']],
-           ['/language/:language', 'changeLanguage@BlogController', ['name' => 'language', 'filters' => ['language' => '(\w+)']]]
+           ['', 'App\\Blog\\Home\\HomeController'],
+           ['/home', 'App\\Blog\\Home\\HomeController', ['name' => 'home']],
+           ['/language/:language', 'changeLanguage@App\\Blog\\Common\\BlogController', ['name' => 'language', 'filters' => ['language' => '(\w+)']]]
         );
     }
 
-    function getPageRules() : array
+    function getContentRules() : array
     {
        return array(
-           ['/news', 'news@PageController', ['name' => 'news']],
-
-           ['/page/:id', 'page@PageController', ['name' => 'page', 'filters' => ['id' => '(\d+)']]]
+           ['/news', 'App\\Blog\\News\\NewsController', ['name' => 'news']],
+           ['/page/:id', 'page@App\\Blog\\Page\\PageController', ['name' => 'page', 'filters' => ['id' => '(\d+)']]]
         );
     }
 }

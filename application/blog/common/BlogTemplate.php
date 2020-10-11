@@ -1,4 +1,4 @@
-<?php namespace App\Blog\Templates;
+<?php namespace App\Blog\Common;
 
 /**
  * Template: Blog

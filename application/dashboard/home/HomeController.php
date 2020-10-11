@@ -1,8 +1,10 @@
-<?php namespace App\Dashboard\Controllers;
+<?php namespace App\Dashboard\Home;
 
 use codesaur as single;
 
-class HomeController extends \Velociraptor\Controllers\RaptorController
+use App\Dashboard\Common\DashboardController;
+
+class HomeController extends DashboardController
 {
     public function index()
     {
