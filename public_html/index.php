@@ -5,8 +5,7 @@
 
 $app_namespaces = array(
     '/' => 'App\\Blog\\',
-    '/indo' => 'Indoraptor\\',
     '/dashboard' => 'App\\Dashboard\\'
 );
 
-codesaur::start(new codesaur\Common\Application($app_namespaces));
+codesaur::start(new Velociraptor\Application($app_namespaces));

@@ -1,4 +1,4 @@
-<?php namespace App\Blog\Common;
+<?php namespace App\Blog;
 
 /**
  * Template: Blog
@@ -7,8 +7,8 @@
 
 use codesaur as single;
 
-use codesaur\HTML\TwigTemplate;
-use codesaur\HTML\IndexTemplate;
+use Velociraptor\TwigTemplate;
+use Velociraptor\IndexTemplate;
 
 class BlogTemplate extends IndexTemplate
 {
@@ -16,19 +16,21 @@ class BlogTemplate extends IndexTemplate
     {
         parent::__construct(\dirname(__FILE__) . '/blog.index.html');
         
-        $general = single::controller()->indoget('/web/general/system/' . single::flag());
+        $general = single::controller()->indoget('/web/general/system/' . single::language()->current());
         if (isset($general['result'])) {
             $this->set('general', $general['result']);
         }
 
-        $menudata = single::controller()->indoget('/web/menu/system/' . single::flag());
+        $menudata = single::controller()->indoget('/web/menu/system/' . single::language()->current());
         if (isset($menudata['result'])) {
             $this->set('menudata', $menudata['result']);
         }
         
         if (isset($template)) {
-            $vars['index'] = $this;
-            $this->set('content', new TwigTemplate($template, $vars));
+            $content = new TwigTemplate($template, $vars);
+            $content->setIndex('index', $this);
+
+            $this->set('content', $content);
         }
     }
 }

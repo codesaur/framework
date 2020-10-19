@@ -2,7 +2,7 @@
 
 use codesaur as single;
 
-use App\Dashboard\Common\DashboardController;
+use App\Dashboard\DashboardController;
 
 class HomeController extends DashboardController
 {

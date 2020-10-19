@@ -1,7 +1,7 @@
 <?php namespace App\Blog\Home;
 
-use App\Blog\Common\BlogTemplate;
-use App\Blog\Common\BlogController;
+use App\Blog\BlogTemplate;
+use App\Blog\BlogController;
 
 class HomeController extends BlogController
 {

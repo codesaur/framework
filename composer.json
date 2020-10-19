@@ -12,15 +12,13 @@
         }
     ],
     "require": {
-        "codesaur/raptor": "^4.1"
+        "codesaur/raptor": "^4.3"
     },
     "autoload": {
         "psr-4": {
-            "App\\Blog\\": "application/blog/",
-            "App\\Blog\\Common\\": "application/blog/common/",
+            "App\\Blog\\": ["application/blog/", "application/blog/base/"],
             "App\\Blog\\Home\\": "application/blog/home/",
-            "App\\Dashboard\\": "application/dashboard/",
-            "App\\Dashboard\\Common\\": "application/dashboard/common/",
+            "App\\Dashboard\\": ["application/dashboard/", "application/dashboard/base/"],
             "App\\Dashboard\\Home\\": "application/dashboard/home/"
         }
     },

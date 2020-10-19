@@ -7,7 +7,7 @@ class Routing extends \codesaur\Http\Routing
        return array(
            ['', 'App\\Blog\\Home\\HomeController'],
            ['/home', 'App\\Blog\\Home\\HomeController', ['name' => 'home']],
-           ['/language/:language', 'changeLanguage@App\\Blog\\Common\\BlogController', ['name' => 'language', 'filters' => ['language' => '(\w+)']]]
+           ['/language/:language', 'changeLanguage@App\\Blog\\BlogController', ['name' => 'language', 'filters' => ['language' => '(\w+)']]]
         );
     }
 
