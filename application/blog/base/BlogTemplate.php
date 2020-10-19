@@ -27,10 +27,7 @@ class BlogTemplate extends IndexTemplate
         }
         
         if (isset($template)) {
-            $content = new TwigTemplate($template, $vars);
-            $content->setIndex('index', $this);
-
-            $this->set('content', $content);
+            $this->set('content', new TwigTemplate($template, $vars));
         }
     }
 }
