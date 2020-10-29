@@ -2,6 +2,8 @@
 
 use codesaur as single;
 
+use Velociraptor\Boot4\Dashboard;
+
 use App\Dashboard\DashboardController;
 
 class HomeController extends DashboardController
@@ -13,6 +15,7 @@ class HomeController extends DashboardController
             return single::redirect('web-report');
         }
         
-        return false;
+        $dashboard = new Dashboard();
+        $dashboard->render('Welcome ' . single::user()->account('first_name') . ' ' . single::user()->account('last_name'));
     }
 }
