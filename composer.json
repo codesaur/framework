@@ -16,10 +16,10 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\Blog\\": ["application/blog/", "application/blog/base/"],
-            "App\\Blog\\Home\\": "application/blog/home/",
-            "App\\Dashboard\\": ["application/dashboard/", "application/dashboard/base/"],
-            "App\\Dashboard\\Home\\": "application/dashboard/home/"
+            "App\\Blog\\": ["application/blog", "application/blog/base"],
+            "App\\Blog\\Home\\": "application/blog/home",
+            "App\\Dashboard\\": ["application/dashboard", "application/dashboard/base"],
+            "App\\Dashboard\\Home\\": "application/dashboard/home"
         }
     },
     "scripts": {
