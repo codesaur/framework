@@ -12,14 +12,15 @@
         }
     ],
     "require": {
-        "codesaur/raptor": "^5.2.0"
+        "codesaur/raptor": "^5.2.8"
     },
     "autoload": {
         "psr-4": {
-            "App\\Blog\\": ["application/blog", "application/blog/base"],
+            "App\\Blog\\": "application/blog",
             "App\\Blog\\Home\\": "application/blog/home",
-            "App\\Dashboard\\": ["application/dashboard", "application/dashboard/base"],
-            "App\\Dashboard\\Home\\": "application/dashboard/home"
+            "App\\Dashboard\\": "application/dashboard",
+            "App\\Dashboard\\Home\\": "application/dashboard/home",
+            "App\\Indo\\": "application/indo"
         }
     },
     "scripts": {

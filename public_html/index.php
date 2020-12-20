@@ -5,6 +5,7 @@
 
 $app_namespaces = array(
     '/' => 'App\\Blog\\',
+    '/indo' => 'App\\Indo\\',
     '/dashboard' => 'App\\Dashboard\\'
 );
 

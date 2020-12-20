@@ -14,7 +14,7 @@ class BlogTemplate extends IndexTemplate
 {
     function __construct(string $template = null, array $vars = null)
     {
-        parent::__construct(\dirname(__FILE__) . '/blog.index.html');
+        parent::__construct(\dirname(__FILE__) . '/home/blog.index.html');
         
         $general = single::controller()->indoget('/web/general/system/' . single::language()->current());
         if (isset($general['result'])) {
